@@ -1,13 +1,8 @@
+{% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>첫 페이지</title>
-    <link rel="stylesheet" href="{% static 'css/home.css' %}">
-</head>
-<body>
+{% block title %}첫 페이지{% endblock %}
+{% block link %}{% static 'css/home.css' %}{% endblock %}
+{% block content %}
     <h1>CRUD 실습</h1>
     <!-- 여기서 Create, Update(창이동), Delete 구현 -->
     <h2>생성</h2>
@@ -34,5 +29,4 @@
         </div>
         {% endfor %}
     </div>
-</body>
-</html>
+{% endblock %}

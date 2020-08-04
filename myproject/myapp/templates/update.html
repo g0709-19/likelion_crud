@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}상품 수정{% endblock %}
+{% block link %}{% static 'css/update.css' %}{% endblock %}
+{% block content %}
+<form action="{% url 'update' item.id %}" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="text" name="name" value="{{ item.name }}">
+    <br>
+    <input type="text" name="price" value="{{ item.price }}">
+    <br>
+    <input type="submit" class="button">
+</form>
+{% endblock %}
