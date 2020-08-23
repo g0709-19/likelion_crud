@@ -1,0 +1,13 @@
+.weather {
+    height: 252px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.img {
+    height: 100px;
+}
+
+.btn {
+    text-align: center;
+}
